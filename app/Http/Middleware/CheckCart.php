@@ -6,6 +6,7 @@ use Closure;
 use Gloudemans\Shoppingcart\Facades\Cart;
 use Illuminate\Http\Request;
 
+
 class CheckCart
 {
     /**
@@ -21,5 +22,8 @@ class CheckCart
             return $next($request);
         }
         return redirect()->route('shop.index');
+
+
+        return $next($request);
     }
 }

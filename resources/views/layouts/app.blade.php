@@ -8,7 +8,19 @@
     <title>{{ config('app.name', 'Laravel') }} | @yield('title', 'Ali Shop')</title>
     <meta name="description" content="">
     <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
+
     <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
+
+
+    <link rel="stylesheet" type="text/css" href=" {{ asset('nst/css/bootstrap.css') }}" />
+      <!-- font awesome style -->
+      <link href="{{asset('nst/css/font-awesome.min.css')}}" rel="stylesheet" />
+      <!-- Custom styles for this template -->
+      <link href="{{asset('nst/css/style.css')}}" rel="stylesheet" />
+      <!-- responsive style -->
+      <link href="{{asset('nst/css/responsive.css')}}" rel="stylesheet" />
+
+
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link rel="stylesheet" href="{{ asset('frontend/css/magnific-popup.css') }}">
     <link rel="stylesheet" href="{{ asset('frontend/css/animate.css') }}">

@@ -20,8 +20,8 @@ class DatabaseSeeder extends Seeder
                 PermissionTableSeeder::class,
                 AdminSeeder::class,
                 SupervisorSeeder::class,
-                UserSeeder::class,
-                UserAddressSeeder::class,
+             /*   UserSeeder::class,
+                UserAddressSeeder::class,*/
                 CategoriesTableSeeder::class,
                 TagsTableSeeder::class,
                 ProductsTableSeeder::class,
@@ -30,10 +30,10 @@ class DatabaseSeeder extends Seeder
 //                ProductMediaTableSeeder::class,
                 PagesSeeder::class,
                 SettingSeeder::class,
-                ShippingCompanySeeder::class,
+               /* ShippingCompanySeeder::class,*/
                 PaymentMethodSeeder::class,
                 CouponSeeder::class,
-                OrderSeeder::class,
+            /*    OrderSeeder::class,*/
                 LinkSeeder::class,
             ]);
         }

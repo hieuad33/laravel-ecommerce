@@ -32,7 +32,7 @@ Route::get('/page/{slug}', [PageController::class, 'show'])->name('page.show');
 Route::get('login/{provider}', [LoginController::class, 'redirectToProvider'])->name('social_login');
 Route::get('login/{provider}/callback', [LoginController::class, 'handleProviderCallback'])->name('social_login_callback');
 
-Route::middleware(['middleware' => 'auth'])->group(function() {
+Route::middleware(['auth'])->group(function() {
 
     Route::middleware(['middleware' => 'verified'])->group(function() {
         Route::get('/user/dashboard', [UserController::class, 'dashboard'])->name('user.dashboard');
@@ -43,7 +43,7 @@ Route::middleware(['middleware' => 'auth'])->group(function() {
         Route::get('/user/orders', [UserController::class, 'orders'])->name('user.orders');
     });
 
-    Route::middleware(['middleware' => 'checkCart'])->group(function() {
+    Route::middleware(['checkCart'])->group(function() {
         Route::get('/checkout', [CheckoutController::class, 'index'])->name('checkout.index');
 
         // PayPal gateway
