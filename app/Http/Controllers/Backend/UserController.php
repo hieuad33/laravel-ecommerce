@@ -27,8 +27,8 @@ class UserController extends Controller
     {
         $this->authorize('access_user');
 
-        $users = User::role(['user'])
-            ->when(\request()->keyword != null, function ($query) {
+        $users = User::/*role(['user'])
+            ->*/when(\request()->keyword != null, function ($query) {
                 $query->search(\request()->keyword);
             })
             ->when(\request()->status != null, function ($query) {
